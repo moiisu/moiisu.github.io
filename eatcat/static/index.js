@@ -750,29 +750,43 @@ function stair() {
 // custom
 
 function showImg1(){
-    url = './static/image/1.png'
+    url = './static/image/1.png';
+    show_btn(2);
+    save_cookie();
 }
 
 function showImg2(){
     url = './static/image/2.png'
+    show_btn(2);
+    save_cookie();
 }
 
 function showImg3(){
-    url = './static/image/3.png'
+    url = './static/image/3.png';
+    show_btn(2);
+    save_cookie();
 }
 
 function showImg4(){
-    url = './static/image/4.jpg'
+    url = './static/image/4.jpg';
+    show_btn(2);
+    save_cookie();
 }
 
 function showImg5(){
-    url = './static/image/5.jpeg'
+    url = './static/image/5.jpeg';
+    show_btn(2);
+    save_cookie();
 }
 
 function showImg6(){
-    url = './static/image/6.png'
+    url = './static/image/6.png';
+    show_btn(2);
+    save_cookie();
 }
 
 function showImg7(){
-    url = './static/image/7.png'
+    url = './static/image/7.png';
+    show_btn(2);
+    save_cookie();
 }

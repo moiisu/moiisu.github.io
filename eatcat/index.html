@@ -11,10 +11,10 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="./static/index.css" rel="stylesheet" type="text/css">
+    <link href="static/index.css" rel="stylesheet" type="text/css">
     <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
     <script src="https://passport.cnblogs.com/scripts/jsencrypt.min.js"></script>
-    <script src="./static/index.js"></script>
+    <script src="static/index.js"></script>
 </head>
 
 <body onLoad="init()" oncontextmenu=self.event.returnValue=false>
@@ -127,13 +127,13 @@
                     <h3 style="font-size:1.0em; color:#fff; line-height:1.3em;">
                         自定义按键显示的图片（可以是动图哦~）
                     </h3>
-                    <a class="cuimg" href="javascript: showImg1();"><img src="./static/image/1.png" height="100" width="100"></img></a>
-                    <a class="cuimg" href="javascript: showImg2();"><img src="./static/image/2.png" height="100" width="100"></img></a>
-                    <a class="cuimg" href="javascript: showImg3();"><img src="./static/image/3.png" height="100" width="100"></img></a>
-                    <a class="cuimg" href="javascript: showImg4();"><img src="./static/image/4.jpg" height="100" width="100"></img></a>
-                    <a class="cuimg" href="javascript: showImg5();"><img src="./static/image/5.jpeg" height="100" width="100"></img></a>
-                    <a class="cuimg" href="javascript: showImg6();"><img src="./static/image/6.png" height="100" width="100"></img></a>
-                    <a class="cuimg" href="javascript: showImg7();"><img src="./static/image/7.png" height="100" width="100"></img></a>
+                    <a class="cuimg" onclick="showImg1()"><img src="./static/image/1.png" height="100" width="100"></img></a>
+                    <a class="cuimg" onclick="showImg2()"><img src="./static/image/2.png" height="100" width="100"></img></a>
+                    <a class="cuimg" onclick="showImg3()"><img src="./static/image/3.png" height="100" width="100"></img></a>
+                    <a class="cuimg" onclick="showImg4()"><img src="./static/image/4.jpg" height="100" width="100"></img></a>
+                    <a class="cuimg" onclick="showImg5()"><img src="./static/image/5.jpeg" height="100" width="100"></img></a>
+                    <a class="cuimg" onclick="showImg6()"><img src="./static/image/6.png" height="100" width="100"></img></a>
+                    <a class="cuimg" onclick="showImg7()"><img src="./static/image/7.png" height="100" width="100"></img></a>
                     <div class="u-file-c u-file-btn">
                         <input id="upload-input" type="file" accept="image/gif, image/jpg, image/png, image/webp"
                             onchange="showImg(this)" />
