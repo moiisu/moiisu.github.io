@@ -1,0 +1,5 @@
+changeBg:e7cd7b899e510fb3f0969bfbd733c895d0430ccb.webp;
+:你进入了费县第二中学 -fontSize=default;
+changeBg:a2qkv-qhblb-001.png;
+:你发现安国姐姐正在做一些奇怪的事情 -fontSize=default;
+choose:跑过去闻气味:club.txt|装作没看见:club.txt|进行一段SQL注入:school.txt;

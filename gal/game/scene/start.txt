@@ -1,0 +1,12 @@
+bgm:s_Title.mp3;
+unlockBgm:s_Title.mp3 -name=雲を追いかけて;
+intro:你好|我是 ♥王安国♥|**建议玩了DDLC再来玩安国文学部 虽然我只玩了一半** -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+changeBg:bg.png -next;
+unlockCg:bg.png -name=良夜; // 解锁CG并赋予名称
+changeFigure:wag.png -left -next;
+setAnimation: -target=fig-left -next;
+王安国:人家是 ♥王安国 ♥喵~ -v1.wav -fontSize=default;
+getUserInput:name -title=主人的名字 -buttonText=确认;
+{name}、一直盯着那里看干什么 -fontSize=default;
+是不是喜欢我的胸部 -fontSize=default;
+choose:是的、安国姐姐 ♥请和我交往:school.txt;

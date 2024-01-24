@@ -1,0 +1,4 @@
+intro:王安国邀请你加入安国文学部 Doki Doki Anguo Club (DDAC)。|哈哈哈 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+changeBg:jy.png;
+:请和安国姐姐一起写诗 -fontSize=default;
+choose:小时不识蟹:jy.txt|呼作李子旭:jy.txt|又疑李糖糖:jy.txt|安国最喜欢:jy.txt;

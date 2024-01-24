@@ -1,0 +1,3 @@
+changeFigure:none; -next
+王安国:好诗好诗 -fontSize=default;
+choose:于是王安国死了。:end1.txt|于是王安国死了。（悲伤）:end2.txt|于是王安国死了。（开心）:end3.txt|于是陈士勇死了。（开心）:end4.txt;

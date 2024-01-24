@@ -1,0 +1,5 @@
+changeFigure:none;
+changeBg:1.png -unlockname=BE1;
+intro:Bad Ending -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+unlockCg:1.png -name=BE1;
+end;
