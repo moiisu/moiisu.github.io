@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨德中跳舞</title>
+    <!-- 引入Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+    <style>
+        .plyr__video-wrapper {
+            margin: auto;
+            width: auto;
+            height: auto;
+            max-width: 80%;
+        }
+        @media screen and (max-width: 600px) {
+            .plyr {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <video id="player" playsinline controls data-poster="/img/ydzcover.png">
+        <source src="/img/ydz.webm" type="video/webm" />
+        <source src="/img/ydz.mp4" type="video/mp4" />
+        <!-- 添加字幕（如果需要） -->
+        <track kind="captions" label="中文" srclang="zh" src="/img/ydz.vtt" default />
+    </video>
+</div>
+
+<!-- 引入Plyr JS -->
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<script>
+    // 初始化Plyr
+    const player = new Plyr('#player', {
+        // 配置选项
+        // controls: ['play', 'progress', 'mute', 'volume', 'fullscreen'],
+        clickToPlay: true,
+        resetOnEnd: true,
+        loop: { active: true },
+        autoplay: true,
+        captions: { active: true, language: 'zh', update: false },
+    });
+</script>
+
+</body>
+</html>

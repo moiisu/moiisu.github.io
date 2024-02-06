@@ -38,23 +38,15 @@
   <p>未完待续</p>
   <p>-------------</p>
   <p>评论区:</p>
-  <div id="vcomments">
-            </div>
-            <script src="//cdn.staticfile.org/valine/1.5.1/Valine.min.js">
-            </script>
-            <script>
-              new Valine({
-                             el: '#vcomments',
-                             appId: 'MMH0HmN9WNMhxXgccAiwt5qA-MdYXbMMI',
-                             appKey: 'meCb4Dp0hSEmax5CgVfNrZST',
-                             placeholder: '请留下您的评论...',
-                             avatar: 'mp',
-                             pageSize: 10,
-                             recordIP: true,
-                             path: window.location.pathname,
-                             serverURLs: 'https://api.miku.run.place',
-                          });
-             </script>
+  <div id="tcomment"></div>
+  <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
+  <script>
+  twikoo.init({
+    envId: 'https://mikukatsune.netlify.app/.netlify/functions/twikoo',
+    el: '#tcomment',
+    path: location.pathname,
+  })
+  </script>
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <span id="busuanzi_container_site_pv">本页面总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 </body>
