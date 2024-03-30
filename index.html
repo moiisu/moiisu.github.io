@@ -1,197 +1,41 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/icon/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/logo/apple-touch-icon.png" />
+    <link rel="bookmark" href="/images/logo/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="200x200" href="/images/logo/apple-touch-icon.png" />
+    <meta name="description" content="我就是喜欢王庆杰" />
+    <meta name="keywords" content="王庆杰, 我爱你!" />
+    <meta name="author" content="少女" />
+    <meta name="theme-color" content="#424242" />
+    <title>王庆杰, 我爱你!</title>
+    <!-- HarmonyOS Sans -->
+    <!-- 本站 CDN 已开启防盗链，非本站域名不可访问，请更改链接为下方内容，否则自定义字体将失效 -->
+    <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.imsyy.top/gh/imsyy/file/font/HarmonyOS_Sans/regular.min.css" /> -->
+    <!-- IE Out -->
+    <script>
+      if (/*@cc_on!@*/ false || (!!window.MSInputMethodContext && !!document.documentMode))
+        window.location.href =
+          'https://support.dmeng.net/upgrade-your-browser.html?referrer=' +
+          encodeURIComponent(window.location.href);
+    </script>
+    <script type="module" crossorigin src="/assets/index-a9b6fac9.js"></script>
+    <link rel="stylesheet" href="/assets/index-e2ffb5dc.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
 
-<head>
-    <title>我爱王庆杰</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            background-image: url("img/back_index.jpg");
-            background-repeat: repeat;
-            background-size: cover;
-            /* display: flex; */
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-
-        /* 设置默认的字体大小 */
-        .welcome-text {
-            font-size: 100px;
-            color: black;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0);
-            padding: 20px;
-        }
-
-        .container {
-            position: relative;
-            margin: auto;
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            width: 90%;
-            max-width: 600px;
-            animation: fadeIn 2s ease;
-        }
-        
-        
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-        
-        h1 {
-            color: #333;
-            font-size: 24px;
-            animation: rainbowText 5s linear infinite;
-        }
-
-        @keyframes rainbowText {
-            0% {
-                color: red;
-            }
-
-            14% {
-                color: orange;
-            }
-
-            28% {
-                color: yellow;
-            }
-
-            42% {
-                color: green;
-            }
-
-            57% {
-                color: blue;
-            }
-
-            71% {
-                color: indigo;
-            }
-
-            85% {
-                color: violet;
-            }
-
-            100% {
-                color: red;
-            }
-        }
-
-        button {
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 16px;
-            border-radius: 5px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #45a049;
-            transform: scale(1.1);
-        }
-
-        /* 使用媒体查询来设置移动设备的字体大小 */
-        @media (max-width: 767px) {
-            .welcome-text {
-                font-size: 70px;
-            }
-        }
-
-        .pfont {
-            font-size: 100px;
-            background-color: pink;
-            border-radius: 20px; /* 设置圆角半径 */
-            padding: 10px; /* 设置内边距 */
-        }
-
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-        <h1>王庆杰，我爱你！</h1>
-        <p id="message" style="display: none;"></p>
-        <p class="pfont">王庆杰，</p>
-        <p class="pfont">我爱你！</p>
-        <p class="pfont">——丁明月</p>
-        <p><a href="eatcat">吃掉小安国</a></p>
-        <br />
-        <p><a href="ydz.html"><b>杨德忠跳舞</b></a></p>
-        <br />
-        <p><a href="dxg"><b>合成大安国</b></a></p>
-        <br />
-        <p><a href="https://mikuhatsune.pages.dev">蟹神-cf</a></p>
-        <br />
-        <p><a href="xies/cutf">切螃蟹(螃蟹忍者)</a></p>
-	    <br />
-        <p><a href="https://syoujo.pages.dev"><b>蟹神抽卡</b>-cf</a></p>
-	    <br />
-	    <p><a href="gal">安国文学部</a></p>
-        <br />
-        <p><a href="https://初音未来.pages.dev"><b>PhiGuos</b>(PhiCommunity安国版)</a></p>
-        <br />
-	    <p><a href="xies/wish">蟹神抽卡-gh(有bug不能使用)</a></p>
-        <br />
-        <p><a href="xies">蟹神-gh</a></p>
-        <div id="tcomment"></div>
-        <script src="https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js"></script>
-        <script>
-        twikoo.init({
-          envId: 'https://mikukatsune.netlify.app/.netlify/functions/twikoo',
-          el: '#tcomment',
-          path: location.pathname,
-        })
-        </script>
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_site_pv">本页面总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-        <script>
-            // 获取当前日期
-            var now = new Date();
-            // 设置目标日期为下一个6月30日
-            var targetDate = new Date(now.getFullYear(), 5, 30);
-
-            // 如果当前日期已经是6月30日或之后
-            if (now.getMonth() > 5 || (now.getMonth() === 5 && now.getDate() >= 30)) {
-                // 将目标日期设置为明年的6月30日
-                targetDate.setFullYear(targetDate.getFullYear() + 1);
-            }
-
-            // 计算距离目标日期的天数差值
-            var timeDiff = targetDate.getTime() - now.getTime();
-            var daysRemaining = Math.ceil(timeDiff / (1000 * 3600 * 24)); // 将毫秒转换为天
-
-            // 检查是否是6月30日
-            if (now.getMonth() === 5 && now.getDate() === 30) {
-                document.getElementById("message").innerHTML = "杰哥生日快乐！";
-            } else {
-                document.getElementById("message").innerHTML = "距杰哥的生日还有" + daysRemaining + "天";
-            }
-            document.getElementById("message").style.display = "block";
-        </script>
-    </div>
-
-</body>
-
+  <body>
+    <!-- 主体内容 -->
+    <div id="app"></div>
+    <!-- noscript -->
+    <noscript>
+      <div style="text-align: center">请开启 JavaScript</div>
+    </noscript>
+    
+  </body>
 </html>
