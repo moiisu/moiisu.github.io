@@ -1,7 +1,0 @@
-Game_name:安国文学部 Doki Doki Anguo Club;
-Game_key:51ead345c1d094;
-Title_img:WebGAL_New_Enter_Image.png;
-Title_bgm:s_Title.mp3;
-Textbox_theme:imss;
-Package_name:com.shoujo.ddlc;
-Description:DDAC;
