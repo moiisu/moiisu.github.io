@@ -5,17 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/sakana.min.css" />
     <title>杰哥嫖娼</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .sure-button {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 120px;
+            height: 50px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
+    <div id="cover" style="text-align: center;background-color: #ffffffcc;width: 100%;height: 100%;margin: 0;padding: 0; font-size: xx-large;position: absolute;left: 0;right: 0;top: 0;z-index: 9999;display: flex;backdrop-filter: blur(10px);">
+    <span style="position: absolute;left: 0;right: 0;margin: auto;padding: 20px;color: red;"><strong>警告! 此网页含有<span style="color: purple;">杰哥</span>内容</strong></span>
+    <p style="margin: auto;text-align: center;margin-top: 10%;font-size: 60px;margin-top: 100px;">我保证已满18岁</p>
+    <button class="sure-button" style="background-color: skyblue;top: 40%;" onclick="javascript: document.getElementById('cover').remove()">进入</button>
+    <button class="sure-button" style="background-color: pink;top: 55%;" onclick="javascript: window.close()">退出</button>
+    </div>
     <div id="sakana-widget" style="margin-top: 10rem;"></div>
     <script>
-        function initSakanaWidget() {
-            const wqj = SakanaWidget.getCharacter('chisato')
-            wqj.image = '/img/sakana.webp'
-            SakanaWidget.registerCharacter('wqj', wqj)
-            new SakanaWidget({ character: 'wqj', size: 300}).mount('#sakana-widget')
+        function initSakanaWidget(){
+            const wqj = SakanaWidget.getCharacter('chisato');
+            wqj.image = '/img/sakana.webp';
+            SakanaWidget.registerCharacter('wqj', wqj);
+            new SakanaWidget({ character: 'wqj', size: 300}).mount('#sakana-widget');
+            const icr = document.querySelector('.sakana-widget-img');
+            const sound = new Audio('./sound.mp3');
+            icr.addEventListener('touchstart', () => {
+                sound.play();
+            })
+            icr.addEventListener('click', () => {
+                sound.play();
+            })
         }
-      </script>
-      <script async onload="initSakanaWidget()" src="https://cdn.staticfile.net/sakana-widget/2.7.0/sakana.min.js"></script>
+    </script>
+    <script async onload="initSakanaWidget()" src="https://cdn.staticfile.net/sakana-widget/2.7.0/sakana.min.js"></script>
 </body>
 </html>
